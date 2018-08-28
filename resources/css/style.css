@@ -1,0 +1,43 @@
+html {
+  font-size: 14px;
+}
+
+.jumbotron {
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  background-image: url("../images/nomnom background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 4rem;
+  height: 40rem;
+  padding-top: 15rem;
+}
+
+.jumbotron h1 {
+  font-family: "Monoton";
+  font-size: 6rem;
+  font-weight: normal;
+}
+
+.content {
+  text-align: center;
+}
+
+.content p {
+  font-size: 1.2rem;
+}
+
+.content .desc {
+  padding-top: 10rem;
+}
+.image-container img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.appreciation {
+  text-align: center;
+  margin: auto;
+  padding: 3rem;
+}
