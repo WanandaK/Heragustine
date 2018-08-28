@@ -20,8 +20,33 @@ html {
   font-weight: normal;
 }
 
+@media only screen and (max-width: 767px) {
+  .jumbotron h1 {
+    font-size: 5.7rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .jumbotron h1 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .jumbotron h1 {
+    font-size: 2rem;
+  }
+
+
+}
+
 .content {
   text-align: center;
+}
+
+.mobile-content {
+  display: none;
+
 }
 
 .content p {
@@ -30,6 +55,7 @@ html {
 
 .content .desc {
   padding-top: 10rem;
+  margin-bottom: 4rem
 }
 .image-container img {
   max-width: 100%;
