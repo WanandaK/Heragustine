@@ -8,7 +8,7 @@ $(document).ready(function(){
        userScroll = userScrollTop;
       } else if (userScroll - userScrollTop > 50) {
       $('.navbar').animate({top: '0px'}, 150);
-        userScroll = userScrollTop;
+       userScroll = userScrollTop;
       }
   });
 
@@ -48,5 +48,18 @@ $('a[href*="#"]')
       }
     }
   });
+
+  $( "content" )
+  .filter( "desc" )
+    .hide()
+  .end()
+  .filter( "image-container" )
+    .hover(function() {
+      $( this )
+        .toggleClass( "active" )
+        .next()
+          .stop( true, true )
+          .slideToggle();
+    });
 
 });

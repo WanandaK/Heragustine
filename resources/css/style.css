@@ -20,15 +20,31 @@ html {
   font-weight: normal;
 }
 
+
+
+.jumbotron h1:hover {
+  background-color: white;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
 @media only screen and (max-width: 767px) {
   .jumbotron h1 {
     font-size: 5.7rem;
+  }
+
+  .desc {
+    display: hidden;
   }
 }
 
 @media only screen and (max-width: 425px) {
   .jumbotron h1 {
     font-size: 3rem;
+  }
+
+  .desc h1{
+    display: hidden;
   }
 }
 
@@ -66,4 +82,8 @@ html {
   text-align: center;
   margin: auto;
   padding: 3rem;
+}
+
+.navigation {
+  margin-top: 15rem;
 }
