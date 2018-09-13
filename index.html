@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="resources/slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Monoton|Open+Sans:400,600,700" rel="stylesheet">
@@ -35,24 +35,47 @@
 
     <!-- JUMBOTRON -->
 
-    <div class="jumbotron">
-      <div class="container">
-        <h1>MONIQUE HERAGUSTINE</h1>
-        <p></p>
+    <div class="carousel">
+      <div class="jumbotron jumbotron-1">
+        <div class="container">
+
+          <p></p>
+        </div>
       </div>
+      <div class="jumbotron jumbotron-2">
+        <div class="container">
+
+          <p></p>
+        </div>
+      </div>
+      <div class="jumbotron jumbotron-3">
+        <div class="container">
+
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div class="relative-wrapper">
+      <h1>MONIQUE HERAGUSTINE</h1>
     </div>
 
     <!-- CONTENT -->
 
     <div class="container content">
       <div class="content">
-        <div class="row">
-          <div class="col-xs-12 col-md-8">
+        <div class="row" data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="500"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-anchor-placement="top-center">
+          <div class="col-xs-12 col-md-6">
             <div class="image-container" id="bedul">
               <img src="resources/images/MH-1.png" alt="">
             </div>
           </div>
-          <div class="col-xs-12 col-md-4">
+          <div class="col-xs-12 col-md-6">
             <div class="desc">
               <h1>"Easy" by Mac Ayres</h1>
               <p>"I can say that loving you is easy <br>
@@ -66,19 +89,28 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="500"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-anchor-placement="top-center">
           <div class="normal-view">
-            <div class="col-xs-12 col-md-4">
+            <div class="col-xs-12 col-md-6">
               <div class="desc">
-                <h1>"Sweetest Love" by Robin Thicke</h1>
-                <p>"Finally I can't believe <br>
-      Cause you and me, you're my sweetest love <br>
-      I got the sweetest love there ain't nothing sweeter <br>
-      I got the sweetest love ain't nothing beat it <br>
-      There ain't nothing sweeter"</p>
+                <h1>"I Like You" by NIKI</h1>
+                <p>"I like you, I like you, I like you
+Sorry, I never meant to <br>
+But who we kidding, it wasn't like I had a say <br>
+One look at you and I won't have it any other way <br>
+I want you, I want you, I want you
+I want you to want me too <br>
+I know that I signed up for this casually <br>
+But I fell for your tricks, now I'm the casualty"</p>
               </div>
             </div>
-            <div class="col-xs-12 col-md-8">
+            <div class="col-xs-12 col-md-6">
               <div class="image-container" id="more">
                 <img src="resources/images/MH-2.png" alt="">
               </div>
@@ -104,13 +136,19 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-12 col-md-8">
+        <div class="row" data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="500"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-anchor-placement="top-center">
+          <div class="col-xs-12 col-md-6">
             <div class="image-container" id="Nique">
               <img src="resources/images/MH-3.png" alt="">
             </div>
           </div>
-          <div class="col-xs-12 col-md-4">
+          <div class="col-xs-12 col-md-6">
             <div class="desc">
               <h1>"Sunflower" by Rex Orange County</h1>
               <p>"And so she sat me down and told me that I didn't have to cry <br>
@@ -165,5 +203,9 @@
       <script type="text/javascript" src="resources/slick-1.8.1/slick/slick.min.js"></script>
       <script type="text/javascript" src="resources/js/main.js"></script>
 
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
   </body>
 </html>

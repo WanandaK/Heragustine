@@ -12,6 +12,16 @@ $(document).ready(function(){
       }
   });
 
+  $('.carousel').slick({
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    draggable: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+  });
+
   // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -48,18 +58,5 @@ $('a[href*="#"]')
       }
     }
   });
-
-  $( "content" )
-  .filter( "desc" )
-    .hide()
-  .end()
-  .filter( "image-container" )
-    .hover(function() {
-      $( this )
-        .toggleClass( "active" )
-        .next()
-          .stop( true, true )
-          .slideToggle();
-    });
 
 });
